@@ -1,0 +1,28 @@
+{
+    "name": "{{cookiecutter.repo_name}}",
+    "version": "0.1.0",
+    "description": "decr",
+    "main": "index.js",
+    "repository": "git@github.com:ffreemt/{{cookiecutter.repo_name}}.git",
+    "author": "freemt",
+    "license": "MIT",
+    "dependencies": {
+        "npm-run-all": "^4.1.5"
+    },
+    "scripts": {
+        "start": "pyright && pytest && yarn style",
+        "test": "nodemon -w tests -w {{cookiecutter.pack_name}} -x pytest tests",
+        "pyright": "nodemon -w {{cookiecutter.pack_name}} -w .venv -e .py -x pyright {{cookiecutter.pack_name}} tests",
+        "pytest": "nodemon -w tests -w {{cookiecutter.pack_name}} -e .py -x pytest tests",
+        "style": "nodemon -w {{cookiecutter.pack_name}} -w tests -x \"black tests {{cookiecutter.pack_name}} && python -m flake8\"",
+        "docstyle": "nodemon -w {{cookiecutter.pack_name}} -w tests -x pydocstyle --convention=google tests {{cookiecutter.pack_name}}",
+        "pylint": "nodemon -w {{cookiecutter.pack_name}} -e .py -x pylint {{cookiecutter.pack_name}}",
+        "test:{{cookiecutter.pack_name}}": "nodemon -w tests -e .py -x pytest -k {{cookiecutter.pack_name}} tests",
+        "publish": "poetry build && poetry publihs",
+        "black": "black tests fastlid",
+        "flake8": "flake8",
+        "pytest": "pytest",
+        "pep257": "pep257",
+        "final": "run-s pep257 black flake8 pytest"
+    }
+}
