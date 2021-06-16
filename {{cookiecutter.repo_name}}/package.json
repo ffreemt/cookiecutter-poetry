@@ -18,7 +18,7 @@
         "docstyle": "nodemon -w {{cookiecutter.pack_name}} -w tests -x pydocstyle --convention=google tests {{cookiecutter.pack_name}}",
         "pylint": "nodemon -w {{cookiecutter.pack_name}} -e .py -x pylint {{cookiecutter.pack_name}}",
         "test:{{cookiecutter.pack_name}}": "nodemon -w tests -e .py -x pytest -k {{cookiecutter.pack_name}} tests",
-        "publish": "poetry build && poetry publihs",
+        "publish": "poetry build && poetry publish",
         "black": "black tests fastlid",
         "flake8": "flake8",
         "pytest": "pytest",
