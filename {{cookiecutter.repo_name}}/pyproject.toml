@@ -2,10 +2,10 @@
 name = "{{cookiecutter.repo_name}}"
 version = "0.1.0"
 description = " "
-authors = ["freemt"]
+authors = [{{"cookiecutter.username"}}]
 license = "MIT"
 readme = "README.md"
-repository = "https://github.com/ffreemt/{{cookiecutter.repo_name}}"
+repository = "https://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}"
 include = ["LICENSE",]
 
 [tool.poetry.dependencies]
