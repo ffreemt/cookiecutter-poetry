@@ -1,7 +1,7 @@
 {
     "name": "{{cookiecutter.repo_name}}",
     "version": "0.1.0",
-    "description": "decr",
+    "description": "description",
     "main": "index.js",
     "repository": "git@github.com:{{cookiecutter.username}}/{{cookiecutter.repo_name}}.git",
     "author": "{{cookiecutter.username}}",
