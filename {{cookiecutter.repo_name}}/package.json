@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "description": "decr",
     "main": "index.js",
-    "repository": "git@github.com:ffreemt/{{cookiecutter.repo_name}}.git",
+    "repository": "git@github.com:{{cookiecutter.username}}/{{cookiecutter.repo_name}}.git",
     "author": "{{cookiecutter.username}}",
     "license": "MIT",
     "dependencies": {
