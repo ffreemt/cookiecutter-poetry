@@ -10,4 +10,4 @@ def test_version():
 
 def test_sanity():
     """Sanity check."""
-    assert {{cookiecutter.pack_name}}()
+    assert not {{cookiecutter.pack_name}}()

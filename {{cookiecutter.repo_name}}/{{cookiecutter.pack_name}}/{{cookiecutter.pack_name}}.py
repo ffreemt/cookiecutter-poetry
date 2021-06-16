@@ -1,4 +1,4 @@
-"""Define {{cookiecutter.pack_name}}"""
+"""Define {{cookiecutter.pack_name}}."""
 from logzero import logger
 
 
