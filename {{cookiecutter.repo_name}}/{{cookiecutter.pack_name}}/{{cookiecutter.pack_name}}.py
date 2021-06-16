@@ -4,3 +4,4 @@ from logzero import logger
 
 def {{cookiecutter.pack_name}}():
     """Define."""
+    logger.debug(" entry ")
