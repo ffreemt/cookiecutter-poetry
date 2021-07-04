@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "{{cookiecutter.repo_name}}"
+name = "{{cookiecutter.pack_name}}"
 version = "0.1.0"
-description = " "
+description = "pack_name descr "
 authors = ["{{cookiecutter.username}}"]
 license = "MIT"
 readme = "README.md"
