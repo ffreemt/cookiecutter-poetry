@@ -1,5 +1,5 @@
 {
-    "name": "{{cookiecutter.repo_name}}",
+    "name": "{{cookiecutter.pack_name}}",
     "version": "0.1.0",
     "description": "description",
     "main": "index.js",
@@ -13,7 +13,7 @@
         "start": "pyright && pytest && yarn style",
         "test": "nodemon -w tests -w {{cookiecutter.pack_name}} -x pytest tests",
         "pyright": "nodemon -w {{cookiecutter.pack_name}} -w .venv -e .py -x pyright {{cookiecutter.pack_name}} tests",
-        "pytest": "nodemon -w tests -w {{cookiecutter.pack_name}} -e .py -x pytest tests",
+        "pytest": "nodemon -w tests -w {{cookiecutter.pack_name}} -e .py -x pytest tests {{cookiecutter.pack_name}}",
         "style": "nodemon -w {{cookiecutter.pack_name}} -w tests -x \"black tests {{cookiecutter.pack_name}} && python -m flake8\"",
         "docstyle": "nodemon -w {{cookiecutter.pack_name}} -w tests -x pydocstyle --convention=google tests {{cookiecutter.pack_name}}",
         "pylint": "nodemon -w {{cookiecutter.pack_name}} -e .py -x pylint {{cookiecutter.pack_name}}",
@@ -21,7 +21,6 @@
         "publish": "poetry build && poetry publish",
         "black": "black tests {{cookiecutter.pack_name}}",
         "flake8": "flake8 tests {{cookiecutter.pack_name}}",
-        "pytest": "pytest",
         "pep257": "pep257 tests {{cookiecutter.pack_name}}",
         "final": "run-s pep257 black flake8 pytest"
     }
