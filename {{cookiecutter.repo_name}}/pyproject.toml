@@ -9,8 +9,7 @@ repository = "https://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_n
 include = ["LICENSE"]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-# python = "^3.6.7"
+python = ">=3.7.3,<4.0"
 logzero = "^1.7.0"
 
 [tool.poe.executor]
