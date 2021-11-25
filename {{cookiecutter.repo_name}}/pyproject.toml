@@ -16,6 +16,7 @@ logzero = "^1.7.0"
 type = "poetry"
 
 [tool.poe.tasks]
+memo = "echo poe test"
 test = "pytest tests"
 build = "poetry build"
 _publish = "poetry publish"
