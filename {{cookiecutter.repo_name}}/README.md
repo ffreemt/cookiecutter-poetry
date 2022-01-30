@@ -8,8 +8,8 @@
 ```shell
 pip install {{cookiecutter.pack_name}}
 # or poetry add {{cookiecutter.pack_name}}
-# pip install git+htts://github.com/{{cookiecutter.username}}/{{cookiecutter.pack_name}}
-# poetry add git+htts://github.com/{{cookiecutter.username}}/{{cookiecutter.pack_name}}
+# pip install git+htts://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}
+# poetry add git+htts://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}
 
 # To upgrade
 pip install {{cookiecutter.pack_name}} -U
