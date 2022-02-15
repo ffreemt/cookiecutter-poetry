@@ -3,8 +3,10 @@ cdto pypi
 cookiecut cookiecutter-pypi-project
 cd repo-name
 
-git init
 gh repo create repo-name --public -d "repo descr"
+git init
+git remote add origin git@github.com:user/repo
+git push --set-upstream origin master
 git push
 
 poetry install
