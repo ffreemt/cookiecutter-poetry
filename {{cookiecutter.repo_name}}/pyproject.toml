@@ -25,12 +25,13 @@ _publish = "poetry publish"
 release = ["test", "build", "_publish"]
 lint = { cmd = "pylint {{cookiecutter.pack_name}}" }
 format = "black tests {{cookiecutter.pack_name}}"
-tunnel = {cmd ="ssh -CN ip_or_hostname_defined_in_hosts -L 9091:127.0.0.1:9091"}
+docstyle = "pydocstyle --convention=google tests {{cookiecutter.pack_name}}"
+tunnel = {cmd = "ssh -CN ip_or_hostname_defined_in_hosts -L 9091:127.0.0.1:9091"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
 flake8 = "^3.9.2"
-pep257 = "^0.7.0"
+pydocstyle = "^6.1.1"
 # tbump = "^6.3.2"
 poethepoet = "^0.10.0"
 

@@ -6,8 +6,9 @@
 ## Install it
 
 ```shell
-pip install git+htts://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}
-# poetry add git+htts://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}
+pip install git+https://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}
+# poetry add git+https://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}}
+# git clone https://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_name}} && cd {{cookiecutter.repo_name}}
 ```
 
 ## Use it
