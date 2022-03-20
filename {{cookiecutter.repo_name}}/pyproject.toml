@@ -38,3 +38,25 @@ poethepoet = "^0.10.0"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --doctest-modules"
+log_cli = true
+testpaths = [
+    "tests",
+    # "integration",
+]
+
+[tool.black]
+skip-string-normalization = 1
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+[tool.flake8]
+max-line-length = 88
+ignore = "D203,E501"
+extend-ignore = "E203,"
+max-complexity = 25
