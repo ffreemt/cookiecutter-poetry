@@ -21,7 +21,8 @@
         "publish": "poetry build && poetry publish",
         "black": "black tests {{cookiecutter.pack_name}}",
         "flake8": "flake8 tests {{cookiecutter.pack_name}}",
+        "pflake8": "pflake8 tests {{cookiecutter.pack_name}}",
         "pep257": "pep257 tests {{cookiecutter.pack_name}}",
-        "final": "run-s pep257 black flake8 pytest"
+        "final": "run-s pep257 black pflake8 pytest"
     }
 }
