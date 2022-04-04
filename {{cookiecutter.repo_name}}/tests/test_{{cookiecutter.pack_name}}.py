@@ -6,11 +6,11 @@ from {{cookiecutter.pack_name}} import {{cookiecutter.pack_name}}
 
 def test_version():
     """Test version."""
-    assert __version__ == "0.1.0"
+    assert __version__[:3] == "0.1"
 
 
 def test_sanity():
-    """Sanity check."""
+    """Check sanity."""
     try:
         assert not {{cookiecutter.pack_name}}()
     except Exception:
