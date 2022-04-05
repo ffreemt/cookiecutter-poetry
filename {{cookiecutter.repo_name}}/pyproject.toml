@@ -52,7 +52,7 @@ testpaths = [
 ]
 
 [tool.black]
-skip-string-normalization = 1
+skip-string-normalization = 0
 
 [tool.isort]
 profile = "black"
