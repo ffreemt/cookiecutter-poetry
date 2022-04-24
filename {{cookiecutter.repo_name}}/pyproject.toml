@@ -34,13 +34,12 @@ pydocstyle = "^6.1.1"
 # tbump = "^6.3.2"
 poethepoet = "^0.10.0"
 
+[tool.poetry.scripts]
+"{{cookiecutter.repo_name}}" = "{{cookiecutter.pack_name}}.__main__:app"
+
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-[poetry.virtualenvs]
-create = true
-in-project = true
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -57,4 +56,3 @@ skip-string-normalization = 0
 [tool.isort]
 profile = "black"
 multi_line_output = 3
-
