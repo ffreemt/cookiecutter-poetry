@@ -3,5 +3,5 @@ from logzero import logger
 
 
 def {{cookiecutter.pack_name}}():
-    """Define."""
+    """Define {{cookiecutter.pack_name}}."""
     logger.debug(" entry ")
