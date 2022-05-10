@@ -15,7 +15,7 @@ logzero.loglevel(set_loglevel())
 app = typer.Typer(
     name="{{cookiecutter.pack_name}}",
     add_completion=False,
-    help="{{{{cookiecutter.pack_name}} help}}",
+    help="{{cookiecutter.pack_name}} help",
 )
 
 
