@@ -17,7 +17,7 @@ install = "^1.3.5"
 type = "poetry"
 
 [tool.poe.tasks]
-memo = "echo poe test"
+memo = "echo poe test or poetry run poe test"
 test = "pytest tests"
 build = "poetry build"
 _publish = "poetry publish"
