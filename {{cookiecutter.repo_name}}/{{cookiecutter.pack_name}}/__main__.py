@@ -38,7 +38,6 @@ def main(
     ),
 ):
     """Define."""
-    ...
 
 
 if __name__ == "__main__":
