@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "husky": "^8.0.1",
         "npm-run-all": "^4.1.5"
     },
     "scripts": {
