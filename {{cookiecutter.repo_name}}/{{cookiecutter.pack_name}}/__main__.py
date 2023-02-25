@@ -10,6 +10,7 @@ from set_loglevel import set_loglevel
 
 from {{cookiecutter.pack_name}} import __version__, {{cookiecutter.pack_name}}
 
+del Path, logger, {{cookiecutter.pack_name}}
 logzero.loglevel(set_loglevel())
 
 app = typer.Typer(
