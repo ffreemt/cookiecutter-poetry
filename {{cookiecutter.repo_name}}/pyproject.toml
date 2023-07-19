@@ -10,7 +10,7 @@ repository = "https://github.com/{{cookiecutter.username}}/{{cookiecutter.repo_n
 [tool.poetry.dependencies]
 python = "^3.10"
 loguru = "^0.7.0"
-set-loglevel = "^0.1.2"
+# set-loglevel = "^0.1.2"  # instead use loguru.logger.remove();loguru.logger.add(sys.stderr, level="DEBUG|INFO etc"
 typer = "^0.4.1"
 
 [tool.poetry.group.dev.dependencies]
