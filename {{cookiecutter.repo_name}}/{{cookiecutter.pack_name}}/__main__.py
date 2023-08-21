@@ -1,17 +1,19 @@
 """Prep __main__.py."""
 # pylint: disable=invalid-name
+import sys
 from pathlib import Path
 from typing import Optional
 
-import logzero
 import typer
-from logzero import logger
-from set_loglevel import set_loglevel
+from loguru import logger
 
 from {{cookiecutter.pack_name}} import __version__, {{cookiecutter.pack_name}}
 
+del sys
+# logger.remove()
+# logger.add(sys.stderr, level="TRACE")
+
 del Path, logger, {{cookiecutter.pack_name}}
-logzero.loglevel(set_loglevel())
 
 app = typer.Typer(
     name="{{cookiecutter.pack_name}}",
