@@ -2,5 +2,6 @@
 . "$(dirname -- "$0")/_/husky.sh"
 
 # npm test
-isort --profile black {{pack_name}}
+# isort --profile black {{pack_name}}
 black {{pack_name}}
+ruff . --fix
