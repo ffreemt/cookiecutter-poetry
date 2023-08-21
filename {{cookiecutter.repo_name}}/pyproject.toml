@@ -30,6 +30,8 @@ type = "poetry"
 [tool.poe.tasks]
 memo = "echo poe test or poetry run poe test"
 test = "pytest tests"
+ruff = "ruff ."
+ruff-fix = "ruff . --fix"
 pyright = "pyright {{cookiecutter.pack_name}}"
 flake8 = "flake8 {{cookiecutter.pack_name}} --ignore F401,E501,F841"
 check = ["pyright", "flake8"]
@@ -44,18 +46,6 @@ format = ["isort", "black"]
 docstyle = "pydocstyle --convention=google tests {{cookiecutter.pack_name}}"
 prerelease = {cmd = "poetry version prerelease && sync-version"}
 tunnel = {cmd = "ssh -CN ip_or_hostname_defined_in_hosts -L 9091:127.0.0.1:9091"}
-
-[tool.poetry.dev-dependencies]
-pytest = "^7.1"
-flake8 = "^3.9.2"
-isort = "^5.10.1"
-black = "^22.3.0"
-pylint = "^2.14.2"
-pyright = "^1.1.254"
-pydocstyle = "^6.1.1"
-toml = "^0.10.2"
-# tbump = "^6.3.2"
-poethepoet = "^0.10.0"
 
 [tool.poetry.scripts]
 "{{cookiecutter.repo_name}}" = "{{cookiecutter.pack_name}}.__main__:app"
