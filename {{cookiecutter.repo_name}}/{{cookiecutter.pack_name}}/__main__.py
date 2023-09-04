@@ -30,7 +30,7 @@ def _version_callback(value: bool) -> None:
 
 @app.command()
 def main(
-    version: Optional[bool] = typer.Option(  # pylint: disable=(unused-argument
+    version: Optional[bool] = typer.Option(  # pylint: disable=unused-argument
         None,
         "--version",
         "-v",
