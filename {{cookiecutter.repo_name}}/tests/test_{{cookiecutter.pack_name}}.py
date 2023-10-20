@@ -1,7 +1,6 @@
 """Test {{cookiecutter.pack_name}}."""
 # pylint: disable=broad-except
-from {{cookiecutter.pack_name}} import __version__
-from {{cookiecutter.pack_name}} import {{cookiecutter.pack_name}}
+from {{cookiecutter.pack_name}} import __version__, {{cookiecutter.pack_name}}
 
 
 def test_version():
